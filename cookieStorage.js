@@ -2,7 +2,7 @@ const simesite = "Strict";
 //const simesite = "Lax";
 
 export const cookieStorage = {
-  setItem: function (key, value, days = 7) {
+  setItem: function (key, value, days = 365 * 20) { // 20year
     const expires = new Date(Date.now() + days * 864e5).toUTCString();
     let cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}; expires=${expires}; path=/; SameSite=${simesite}`;
     if (location.protocol === "https:") {
