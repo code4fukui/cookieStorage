@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>cookieStorage test</title>
+<h1>cookieStorage test</h1>
+
+<table>
+  <tr><th>localStorage</th><td id=td1></td></tr>
+  <tr><th>cookieStorage</th><td id=td2></td></tr>
+</table>
+
+<button id=btnset>setItem</button><br>
+<button id=btnclear>clear</button><br>
+
+<script type="module">
+import { cookieStorage } from "./cookieStorage.js";
+
+const name = "test";
+
+td1.textContent = localStorage.getItem(name)
+td2.textContent = cookieStorage.getItem(name)
+
+btnset.onclick = () => {
+  const v = new Date().toString();
+  localStorage.setItem(name, v);
+  cookieStorage.setItem(name, v);
+  location.reload();
+};
+btnclear.onclick = () => {
+  localStorage.clear();
+  cookieStorage.clear();
+  location.reload();
+};
+
+</script>
+
+<style>
+body {
+  font-family: sans-serif;
+}
+th {
+  text-align: left;
+}
+</style>
+
+
+</body></html>
