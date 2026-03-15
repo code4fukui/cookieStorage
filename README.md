@@ -1,5 +1,7 @@
 # cookieStorage
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 cookieStorage is a library to save small data on the client via Cookies.
 
 ## Demo

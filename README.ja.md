@@ -2,9 +2,6 @@
 
 cookieStrorage は、Cookieを使ってクライアント上に小さなデータを保存するためのライブラリです。
 
-## デモ
-[デモページ](https://code4fukui.github.io/cookieStorage/)
-
 ## 機能
 - cookieにデータを保存/取得/削除できる
 - 有効期限を設定できる
