@@ -1,14 +1,14 @@
 # cookieStorage
 
-cookieStrorage は、Cookieを使ってクライアント上に小さなデータを保存するためのライブラリです。
+cookieStorageは、Cookieを使ってクライアント上に小さなデータを保存するためのJavaScriptライブラリです。
 
 ## 機能
-- cookieにデータを保存/取得/削除できる
-- 有効期限を設定できる
-- Secure属性やSameSite属性を設定できる
+- Cookieにデータを保存、取得、削除できます
+- Cookieの有効期限を設定できます
+- Secure属性やSameSite属性を設定できます
 
 ## 使い方
-cookieStorage.js をインポートして、以下のように使用します。
+cookieStorage.jsをインポートして、以下のように使用します。
 
 ```javascript
 import { cookieStorage } from "./cookieStorage.js";

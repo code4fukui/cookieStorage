@@ -33,4 +33,4 @@ cookieStorage.clear();
 ```
 
 ## License
-MIT License
+MIT License — see [LICENSE](LICENSE).
